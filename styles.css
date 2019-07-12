@@ -1,0 +1,18 @@
+h1{
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+img{
+    padding-left:2%;
+    margin-top: -5%;
+    height: 10%;
+    width: 20%;
+}
+nav{
+    display: inline-block;
+}
+a{
+    flex-direction:row;
+    justify-content:space-between;
+    padding-left:150px;
+    color:royalblue;
+}
