@@ -9,6 +9,7 @@ img{
 }
 nav{
     display: inline-block;
+    background-color:burlywood; 
 }
 a{
     flex-direction:row;
@@ -16,3 +17,21 @@ a{
     padding-left:150px;
     color:royalblue;
 }
+.para{
+    height:200px;
+    width: 400px;
+    padding-left: 2%;
+    border: 2px solid black;
+}
+.para >p{
+    float:left;
+    font-family:sans-serif;
+    padding-left: 1%;
+    
+}
+
+/* #img{
+float: right;
+height:600px;
+widows: 900px;
+} */
