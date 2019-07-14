@@ -11,6 +11,8 @@ NUmber list
 4.projectB
 5.Wecode
 6.rerwa
+#set up instruction
+Text editor
 ## Known Bugs
 the bugs was in modification happen on git hub ,there are some notification that shows me that error
 ## Technology used
