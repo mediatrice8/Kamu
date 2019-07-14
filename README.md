@@ -3,6 +3,14 @@
 ## By Mediatrice NK.KAMPIRE
 ### Purpose and USAGE
 This website is for the purpose of showing the people who am i, so that can help him or her to get more information about me.this web application is uesd when you are going to hve wedding ,it better to have a photography to keep memories.so what you do is to visit our web application and fill the form and send it to us in order to provide you a proper services from Our KAMU Campany and other people who want any software application should kindly text to us
+## List of links on github or github pages
+NUmber list
+1.Explanation
+2.Moringa-School-Projects
+3.My-first
+4.projectB
+5.Wecode
+6.rerwa
 ## Known Bugs
 the bugs was in modification happen on git hub ,there are some notification that shows me that error
 ## Technology used
