@@ -24,20 +24,20 @@ a {
     color:royalblue;
     text-decoration: none;
 }
-.para{
+/* .para{
     height:200px;
     width: 400px;
     padding-left: 2%;
     border: 2px solid black;
-    background-color: cadetblue;
-}
+    background-color: cadetblue; */
+/* }
 .para >p{
     float:left;
     font-family:sans-serif;
     padding-left: 1%;
    
     
-}
+} */
 .image{
     height:200px;
     width: 400px;
@@ -59,4 +59,14 @@ footer{
 }
 body{
     background-color: rgb(178, 217, 236);
+}
+.mater{
+    height: 200px;
+    width: 400px;
+    border: 1px solid black;
+}
+.mater > ol >{
+    float: left;
+    height:200px;
+    width: 400px;
 }
