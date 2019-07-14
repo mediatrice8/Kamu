@@ -42,3 +42,16 @@ a {
     border: 2px solid black;
     float:right;
 }
+div >img{
+    height: 300px;
+    width: 500px;
+    float: center;
+}
+footer{
+    font-size:24px;
+    text-shadow:2px 2px 5px blue;
+    box-shadow:2px 1px 3px rgb(48, 20, 20);
+    padding:10px;
+    background-color:rgb(43, 13, 18);
+    color:white;
+}
