@@ -14,13 +14,15 @@ img{
 }
 nav {
     display: inline-block;
-    background-color:burlywood; 
+    background-color:burlywood;
+     
 }
 a {
     flex-direction:row;
     justify-content:space-between;
     padding-left:170px;
     color:royalblue;
+    text-decoration: none;
 }
 .para{
     height:200px;
