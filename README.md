@@ -1,6 +1,5 @@
-<<<<<<< HEAD
+
 # Portfolio
-=======
 # Kamu
 #### Portifolio Website which contains the content about me, Sunday 14th/july/2019
 ## By Mediatrice NK.KAMPIRE
@@ -25,4 +24,3 @@ Email:kampiremediatrice@gmail.com,Phone No: +250785610704 Location:KN 200
 ##License
 MTI
 Copyright (c) 2019{KAMU Campany LTD}
->>>>>>> f990c0667eca9238c517939f2b84b4e24d06d21a
