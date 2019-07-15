@@ -5,3 +5,15 @@ body{
     color: antiquewhite;
     text-align: center;
 }
+nav {
+    display: inline-block;
+    background-color: rgb(208, 228, 228);
+     
+}
+a{
+    flex-direction:row;
+    justify-content:space-between;
+    padding-left:170px;
+    color:royalblue;
+    text-decoration: none;
+}

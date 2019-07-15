@@ -18,3 +18,8 @@ footer{
     background-color:rgb(143, 118, 122);
     color:white;
 }
+body{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBONChJ1BSfzMRUUhiMYC6daszjFIzQT5eoukc-KZUCsfXMuwNTA");
+    background-repeat: no-repeat;
+    background-size: cover;
+}

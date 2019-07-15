@@ -1,0 +1,14 @@
+body{
+    background-image: url("https://jooinn.com/images/nature-319.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1
+{
+    text-emphasis: center;
+    font-family: monospace;
+}
+p{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+font-weight: bold;
+}
