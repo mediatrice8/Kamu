@@ -1,29 +1,404 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+  <!-- meta -->
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Media - Personal Portfolio </title>
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="bootstrap.css">
+  <!-- Libraries CSS Files -->
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="lib/magnific-popup/magnific-popup.css" rel="stylesheet">
+  <link href="lib/hover/hover.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/styles.css" rel="stylesheet">
+
+  <!-- Responsive css -->
+  <link href="css/responsive.css" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="data:image/png;base64,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">
+
+
 </head>
+
 <body>
-<h1>Photographer.Mediatrice NK. KAMPIRE</h1>
-<img src="https://instagram.fnbo7-1.fna.fbcdn.net/vp/9d9c7c055e7dfb6c2bc7ae787022e75d/5DB45580/t51.2885-19/s150x150/45754609_2200437996865375_2883744894843617280_n.jpg?_nc_ht=instagram.fnbo7-1.fna.fbcdn.net">
-<nav>
-    <a href="welcome.html"><input type="submit" value="back"></a>
-    <a href="about.html">About me</a>
-    <a href="tech.html">Technical skills</a>
-    <a href="applic.html">Application</a>
-    <a href="contact.html">Contact</a>
-</nav><hr><br><br><br><br>
-<div>
-<img src="https://ksassets.timeincuk.net/wp/uploads/sites/54/2017/09/124A8195-1024x683.jpg">
-</div>
-<div id ="1">
-    <p>Hello Ladies and Gentlemen,I am <strong>Photographer</strong> for more information about me click <a href="about.html" target="-self">here</a></p>
-</div>
-    
+
+  <!-- start section navbar -->
+  <nav id="main-nav">
+    <div class="row">
+      <div class="container">
+
+        <div class="logo">
+          <a href="kamu.html"><img src="images/Folio-logo-final-300x168.jpg" alt="logo"></a>
+        </div>
+
+        <div class="responsive"><i data-icon="m" class="ion-navicon-round"></i></div>
+
+        <ul class="nav-menu list-unstyled">
+          <li><a href="#header" class="smoothScroll">Home</a></li>
+          <li><a href="#about" class="smoothScroll">About</a></li>
+          <li><a href="#skills" class="smoothScroll">Skills</a></li>
+          <li><a href="#portfolio" class="smoothScroll">Portfolio</a></li>
+          <li><a href="#contact" class="smoothScroll">Contact</a></li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+  <!-- End section navbar -->
+
+
+  <!-- start section header -->
+  <div id="header" class="home">
+
+    <div class="container">
+      <div class="header-content">
+        <h1>I'm <span class="typed"></span></h1>
+        <p>designer,developer, photographer</p>
+
+        <ul class="list-unstyled list-social">
+          <li><a href="https://www.facebook.com/"><i class="ion-social-facebook"></i></a></li>
+          <li><a href="#"><i class="ion-social-linkedln"></i></a></li>
+          <li><a href="#"><i class="ion-social-googleplus"></i></a></li>
+          <li><a href="github.com/mediatrice8"><i class="ion-social-github"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- End section header -->
+
+
+  <!-- start section about us -->
+  <div id="about" class="paddsection">
+    <div class="container">
+      <div class="row justify-content-between">
+
+        <div class="col-lg-4 ">
+          <div class="div-img-bg">
+            <div class="about-img">
+              <img src="images/44822350_1212125332252497_6860289820692034327_n.jpg" class="img-responsive" alt="me">
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-7">
+          <div class="about-descr">
+            <h1>About me</h1>
+            <p class="p-heading">im am working as fullstack web developer who is results-oriented. i also find joy in UI design.   </p>
+            <p class="separator">Am a self motivated web developer.Am always pushing myself to grow by setting firm goals for myself. Then, once I've defined the benchmarks, I take the necessary steps to achieve those milestone .i am student of University of Rwanda.I am doing computer science.i also took a short
+              course of <strong>FILMMAKING</strong> at College of Innovation Businness Technology. that why i become a
+              photographer. </p>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end section about us -->
+
+
+  <!-- start section services -->
+  <div id="services">
+    <div class="container">
+
+        <div class="services-carousel owl-theme">
+
+          <div class="services-block">
+
+            <i class="ion-ios-lightbulb-outline"></i>
+            <span>HTML</span>
+            <p class="separator">Goal is to deliver quality and secure websites.</p>
+
+          </div>
+
+          <div class="services-block">
+            <i class="ion-ios-lightbulb-outline"></i>
+            <span> Design or CSS</span>
+            <p class="separator">I have a strong sense of user interface. </p>
+
+          </div>
+
+          <div class="services-block">
+
+            <i class="ion-ios-lightbulb-outline"></i>
+            <span>Photography</span>
+            <p class="separator">I spend leisure time capturing moments. </p>
+
+          </div>
+
+          <div class="services-block">
+
+            <i class="ion-ios-lightbulb-outline"></i>
+            <span>JAVASCRIPT</span>
+            <p class="separator">Aim is to help brands reach their target by establish a large customer base.  </p>
+
+          </div>
+
+          <div class="services-block">
+
+            <i class="ion-ios-lightbulb-outline"></i>
+            <span>JAVA</span>
+            <p class="separator">I deliver android based apps and looking forward towards going crossplatform</p>
+
+          </div>
+
+          <div class="services-block">
+
+            <i class="ion-ios-lightbulb-outline"></i>
+            <span>PYTHON/DJANGO</span>
+            <p class="separator">Goal is to deliver quality and secure websites.<br> Django is a high-level Python Web framework that encourages rapid development and clean, pragmatic design</p>
+
+          </div>
+
+          <div class="services-block">
+
+            <i class="ion-ios-lightbulb-outline"></i>
+            <span>ANGULAR</span>
+            <p class="separator">Angular is a platform and framework for building client applications in HTML and TypeScript. </p>
+
+          </div>
+
+         </div>
+
+    </div>
+
+  </div>
+  <!-- end section services -->
+
+
+  <!-- start section portfolio -->
+  <div id="portfolio" class="text-center paddsection">
+
+    <div class="container">
+      <div class="section-title text-center">
+        <h2>My Portfolio</h2>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+
+          <div class="portfolio-list">
+
+            <ul class="nav list-unstyled" id="portfolio-flters">
+              <li class="filter filter-active" data-filter=".all">all</li>
+              <li class="filter" data-filter=".branding">Apps</li>
+              <li class="filter" data-filter=".mockups">Photography</li>
+              <li class="filter" data-filter=".uikits">UX/UI</li>
+              <li class="filter" data-filter=".webdesign">Web Design</li>
+              <li class="filter" data-filter=".photography">Django</li>
+              <li class="filter" data-filter=".photography">Javascript</li>
+            </ul>
+
+          </div>
+
+          <div class="portfolio-container">
+
+            <div class="col-lg-4 col-md-6 portfolio-thumbnail all branding uikits webdesign">
+              <a class="popup-img" href="images/portfolio/1.png">
+                <img src="images/portfolio/1.png" alt="img">
+              </a>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-thumbnail all mockups uikits photography">
+              <a class="popup-img" href="images/portfolio/2.png">
+                <img src="images/portfolio/2.png"  alt="img">
+              </a>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-thumbnail all branding webdesig photography">
+              <a class="popup-img" href="images/portfolio/3.png">
+                <img src="images/portfolio/3.png" alt="img">
+              </a>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-thumbnail all mockups webdesign photography">
+              <a class="popup-img" href="images/portfolio/4.png">
+                <img src="images/portfolio/4.png" alt="img">
+              </a>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-thumbnail all branding uikits photography">
+              <a class="popup-img" href="images/portfolio/5.png">
+                <img src="images/portfolio/5.png" alt="img">
+              </a>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-thumbnail all mockups uikits webdesign">
+              <a class="popup-img" href="images/portfolio/6.png">
+                <img src="images/portfolio/6.png" alt="img">
+              </a>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-thumbnail all mockups uikits webdesign">
+              <a class="popup-img" href="images/portfolio/books_glasses_vase_140465_1280x720.jpg">
+                <img src="images/portfolio/books_glasses_vase_140465_1280x720.jpg" alt="img">
+              </a>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-thumbnail all mockups uikits webdesign">
+              <a class="popup-img" href="images/portfolio/craftsman-exterior.jpg">
+                <img src="images/portfolio/craftsman-exterior.jpg" alt="img">
+              </a>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-thumbnail all mockups uikits webdesign">
+              <a class="popup-img" href="images/portfolio/gettyimages-479767332-612x612.jpg">
+                <img src="images/portfolio/gettyimages-479767332-612x612.jpg" alt="img">
+              </a>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-thumbnail all mockups uikits webdesign">
+              <a class="popup-img" href="images/portfolio/hills_mountains_trees_fog_111193_1280x720.jpg">
+                <img src="images/portfolio/hills_mountains_trees_fog_111193_1280x720.jpg" alt="img">
+              </a>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-thumbnail all mockups uikits webdesign">
+              <a class="popup-img" href="images/portfolio/laptop_balcony_rest_125486_1280x720.jpg">
+                <img src="images/portfolio/laptop_balcony_rest_125486_1280x720.jpg" alt="img">
+              </a>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-thumbnail all mockups uikits webdesign">
+              <a class="popup-img" href="images/portfolio/laptop_glass_water_documents_business_76576_1280x720.jpg">
+                <img src="images/portfolio/laptop_glass_water_documents_business_76576_1280x720.jpg" alt="img">
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- End section portfolio -->
+
+
+  <!-- start sectoion contact -->
+  <div id="contact" class="paddsection">
+    <div class="container">
+      <div class="contact-block1">
+        <div class="row">
+
+          <div class="col-lg-6">
+            <div class="contact-contact">
+
+              <h2 class="mb-30">GET IN TOUCH</h2>
+
+              <ul class="contact-details">
+                <li><span>25K, Kigali</span></li>
+                <li><span>Nyarugenge, Rwanda</span></li>
+                <li><span>+254 707851734</span></li>
+                <li><span>kampiremediatrice@gmail.com</span></li>
+              </ul>
+
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <form action="" method="post" role="form" class="contactForm">
+              <div class="row">
+
+                <div id="sendmessage">Your message has been sent. Thank you!</div>
+                <div id="errormessage"></div>
+
+                <div class="col-lg-6">
+                  <div class="form-group contact-block1">
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                    <div class="validation"></div>
+                  </div>
+                </div>
+
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                    <div class="validation"></div>
+                  </div>
+                </div>
+
+                <div class="col-lg-12">
+                  <div class="form-group">
+                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                    <div class="validation"></div>
+                  </div>
+                </div>
+
+                <div class="col-lg-12">
+                  <div class="form-group">
+                    <textarea class="form-control" name="message" rows="12" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                    <div class="validation"></div>
+                  </div>
+                </div>
+
+                <div class="col-lg-12">
+                  <input type="submit" class="btn btn-defeault btn-send" value="Send message">
+                </div>
+
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- start sectoion contact -->
+
+
+  <!-- start section footer -->
+  <div id="footer" class="text-center">
+    <div class="container">
+      <div class="socials-media text-center">
+
+        <ul class="list-unstyled">
+          <li><a href="https://www.facebook.com/"><i class="ion-social-facebook"></i></a></li>
+          <li><a href="#"><i class="ion-social-linkedln"></i></a></li>
+          <li><a href="#"><i class="ion-social-googleplus"></i></a></li>
+          <li><a href="github.com/mediatrice8"><i class="ion-social-github"></i></a></li>
+        </ul>
+
+      </div>
+
+      <p>&copy;Media . All rights reserved.</p>
+
+      <div class="credits">
+        <!--
+          All the links in the footer should remain intact.
+          You can delete the links only if you purchased the pro version.
+          Licensing information: https://bootstrapmade.com/license/
+          Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Folio
+        -->
+        Designed by <a href="https://bootstrapmade.com/">Media</a>
+      </div>
+
+    </div>
+  </div>
+  <!-- End section footer -->
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/typed/typed.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/magnific-popup/magnific-popup.min.js"></script>
+  <script src="lib/isotope/isotope.pkgd.min.js"></script>
+
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+
 </body>
-<footer><Center>&copy Copy right 2019 KAMU Company ltd&reg</Center></footer>
+
 </html>
